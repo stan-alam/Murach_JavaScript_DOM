@@ -1,0 +1,31 @@
+A primitive type is passed to a function by value
+	e.g.
+
+	A function that receives a string, adds a timestamp to it, and displays it
+
+	var add_timestamp = function ( text ) {
+		var now = new Date();
+		text = text + " " + now.toString();
+		console.log(text);
+	}
+add_timestamp( 3 );
+
+
+Code that calls the function and passes a string argument
+
+var message = "Error: Value out of range.";
+add_timestamp(message); //displays time stamp
+
+Code that displays the value that was passed to the function
+
+alert(message);  // message hasn't been changed
+
+An object passed is passed to a function by reference
+	A function that receives an array and changes its first element
+
+
+
+
+
+
+
